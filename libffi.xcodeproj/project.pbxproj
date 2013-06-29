@@ -326,7 +326,7 @@
 		F6B0839714721EE50031D8A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = F6B0839A14721EE50031D8A1 /* Build configuration list for PBXProject "libffi" */;
 			compatibilityVersion = "Xcode 3.2";
