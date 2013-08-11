@@ -22,3 +22,7 @@ ios/
 build_ios
 build_simulator
 x86_64-apple-darwin12.4.0
+armv7-ios
+armv7s-ios
+i386-ios-sim
+universal-ios
