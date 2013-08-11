@@ -56,9 +56,9 @@ copy_headers i386-ios-sim "${OUTPUT_DIR}/include/i386"
 cat << EOF
 #ifdef __arm__
   #include <arm/arch.h>
-  #ifdef _ARM_ARCH_6
-    #include "include/armv6/ffi.h"
-  #elif _ARM_ARCH_7
+  #ifdef _ARM_ARCH_7S
+    #include "include/armv7s/ffi.h"
+  #elif defined(_ARM_ARCH_7)
     #include "include/armv7/ffi.h"
   #endif
 #elif defined(__i386__)
