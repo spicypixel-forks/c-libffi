@@ -2,8 +2,8 @@
 
 PLATFORM_IOS=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform
 PLATFORM_IOS_SIM=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform
-SDK_IOS_VERSION="6.1"
-MIN_IOS_VERSION="3.0"
+SDK_IOS_VERSION="8.1"
+MIN_IOS_VERSION="6.1"
 OUTPUT_DIR="universal-ios"
 
 build_target () {
@@ -15,7 +15,7 @@ build_target () {
 
     mkdir -p "${builddir}"
     pushd "${builddir}"
-    export CC="${platform}"/Developer/usr/bin/gcc
+    export CC="clang"
     export CFLAGS="-arch ${arch} -isysroot ${sdk} -miphoneos-version-min=${MIN_IOS_VERSION}"
     ../configure --host=${triple} && make
     popd
