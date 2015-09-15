@@ -2,7 +2,7 @@
 
 PLATFORM_IOS=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform
 PLATFORM_IOS_SIM=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform
-SDK_IOS_VERSION="8.3"
+SDK_IOS_VERSION="8.4"
 MIN_IOS_VERSION="6.1"
 OUTPUT_DIR="universal-ios"
 
